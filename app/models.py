@@ -49,3 +49,7 @@ class TodoUpdate(BaseModel):
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
 
+
+"""This setup defines a custom PyObjectId type for validation and serialization. The Todo model uses alias="_id" to map the Pydantic id field to MongoDB's _id field.   
+
+"""
